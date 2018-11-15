@@ -13,9 +13,9 @@ public class Hero extends Mover {
 
     public Hero() {
         super();
-        gravity = 9.8;
+        gravity = 13.0;
         acc = 0.6;
-        drag = 0.8;
+        drag = 0.9;
         setImage("p1.png");
     }
 
@@ -37,16 +37,20 @@ public class Hero extends Mover {
             }
         }
     }
+    boolean onGround(){
+    Actor under = getOneObjectAtOffset(0, getImage().getHeight()/2, Tile.class);
+    return under != null; 
+    }
 
     public void handleInput() {
-        if (Greenfoot.isKeyDown("w")) {
-            velocityY = -10;
+        if ((Greenfoot.isKeyDown("w")) && (onGround() == true)) {
+            velocityY = -18;
         }
 
         if (Greenfoot.isKeyDown("a")) {
-            velocityX = -2;
+            velocityX = -5;
         } else if (Greenfoot.isKeyDown("d")) {
-            velocityX = 2;
+            velocityX = 5;
         }
     }
 
