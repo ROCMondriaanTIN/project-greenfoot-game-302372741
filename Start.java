@@ -6,16 +6,16 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Start extends World
+public class Start extends Actor
 {
-
     /**
-     * Constructor for objects of class Start.
-     * 
+     * Act - do whatever the Start wants to do. This method is called whenever
+     * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    public Start()
-    {    
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(600, 400, 1); 
+    public void act() 
+    {
+    }    
+    public Start(){
+        setImage("box.png");
     }
 }

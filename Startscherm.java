@@ -6,19 +6,18 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Startscherm extends Actor
+public class Startscherm extends World
 {
+
     /**
-     * Act - do whatever the Startscherm wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
+     * Constructor for objects of class Startscherm.
+     * 
      */
-    public void act() 
-    {
-        prepare();
-    }    
-    private void prepare()
-    {
-        Startscherm Start = new Startscherm();
-        addObject(Start, ,);
+    public Startscherm()
+    {    
+        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
+        super(1000, 600, 1); 
+        Start start = new Start();
+        addObject(start, 500, 500);
     }
 }
