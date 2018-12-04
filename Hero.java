@@ -59,12 +59,19 @@ public class Hero extends Mover {
         handleInput();
         for (Actor enemy : getIntersectingObjects(Enemy.class)) {
             if (enemy != null) {
-                getWorld().removeObject(this);
-                return;
+                setLocation(200, 300);
+                Greenfoot.setWorld(new GameOver());
+                break;
             }
         }
-        
+        for (Tile tile : getIntersectingObjects(Tile.class)) {
+            if (tile.getImage().toString().contains("liquid")){
+                setLocation(200, 300);
+                Greenfoot.setWorld(new GameOver());
+                break;
     }
+}
+}
     boolean onGround(){
     Actor under = getOneObjectAtOffset(0, getImage().getHeight()/2, Tile.class);
     return under != null; 

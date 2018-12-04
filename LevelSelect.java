@@ -38,7 +38,21 @@ public class LevelSelect extends World
         {
             Greenfoot.setWorld(new MyWorld());
         }
-        
-     
+        if(Greenfoot.isKeyDown("2"))
+        {
+            Greenfoot.setWorld(new LevelSnow());
+        }
+        if(Greenfoot.isKeyDown("3"))
+        {
+            Greenfoot.setWorld(new LevelSand());
+        }
+        if(Greenfoot.isKeyDown("4"))
+        {
+            Greenfoot.setWorld(new LevelForest());
+        }
+        if(Greenfoot.isKeyDown("5"))
+        {
+            Greenfoot.setWorld(new LevelCave());
+        }
     }
 }

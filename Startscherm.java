@@ -22,9 +22,7 @@ public class Startscherm extends World
     }
     private void prepare()
     {
-        Start start = new Start();
-        Titel titel = new Titel();
-        addObject(start, 500, 400);
+       Titel titel = new Titel();
         addObject(titel, 500, 400);
     }
     public void act()
