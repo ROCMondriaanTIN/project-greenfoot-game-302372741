@@ -16,6 +16,6 @@ public class Start extends Actor
     {
     }    
     public Start(){
-        setImage("box.png");
+        setImage("Earth2.png");
     }
 }
