@@ -98,12 +98,20 @@ public class MyWorld extends World {
         addObject(camera, 0, 0);
         addObject(hero, 100, 2773);
         addObject(new Enemy(), 871, 3170);
+        Diamant diamant = new Diamant();
+        addObject(diamant, 100, 2780);
+        scoreboard = new Scoreboard();
+        addObject(scoreboard, 69, 29);
         
         // Initialiseren van de CollisionEngine zodat de speler niet door de tile heen kan lopen.
         // De collision engine kijkt alleen naar de tiles die de variabele solid op true hebben staan.
         ce = new CollisionEngine(te, camera);
         // Toevoegen van de mover instantie of een extentie hiervan
         ce.addCollidingMover(hero);
+    }
+    
+    public Scoreboard getScoreboard() { 
+        return scoreboard;
     }
         
     @Override

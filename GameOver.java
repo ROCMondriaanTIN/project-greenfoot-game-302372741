@@ -15,6 +15,12 @@ public class GameOver extends World
     public GameOver() 
     {
         super(1000, 800, 1, false);
+    }
+    public void act(){
         
+        if(Greenfoot.isKeyDown("r"))
+        {
+            
+        }
     }
 }

@@ -1,16 +1,16 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Diamant here.
+ * Write a description of class Scoreboard here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Diamant extends Collectable
+public class Scoreboard extends Actor
 {
-   
-    public Diamant() 
+    
+    public void act() 
     {
-        
+        // Add your action code here.
     }    
 }
