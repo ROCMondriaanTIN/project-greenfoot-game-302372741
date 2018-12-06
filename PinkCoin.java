@@ -16,6 +16,7 @@ public class PinkCoin extends HUD
     public PinkCoin(boolean isGepakt)
     {
         this.isGepakt = isGepakt;
+        setImage("hud_p3Alt.png");
     }  
     public void act() 
     {

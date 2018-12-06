@@ -91,7 +91,7 @@ public class HeroBlue extends Mover {
         } 
         Actor Diamant = getOneIntersectingObject(Diamant.class); 
 
-        if(Diamand != null) { 
+        if(Diamant != null) { 
             getWorld().removeObject(Diamant); 
             sb.updateScoreDiamant();
             

@@ -10,7 +10,7 @@ public class Scoreboard extends Actor
 {
     private int xPositieStar = 30;
     private int xPositieKey = 30;
-    private int xPositieDiamand = 945;
+    private int xPositieDiamant = 945;
     private int xPositieBlueCoin = 945;
     private int xPositiePinkCoin = 945;
     private int xPositieGreenCoin = 945;
@@ -32,12 +32,12 @@ public class Scoreboard extends Actor
         getWorld().addObject(new Key(true), xPositieKey, 110);
         xPositieKey += 40;
     }
-    //public void updateScoreDiamant()
-    //{
-        //score ++;
-        //getWorld().addObject(new Diamant(true), xPositieDiamant,50);
-        //xPositieDiamant -= 55;
-    //}
+    public void updateScoreDiamant()
+   {
+        score ++;
+        getWorld().addObject(new Diamant(true), xPositieDiamant,50);
+        xPositieDiamant -= 55;
+    }
     public void updateScoreBlueCoin()
     {
         score ++;

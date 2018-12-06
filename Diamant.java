@@ -21,7 +21,7 @@ public class Diamant extends HUD
     {
         if (isGepakt == false)
         {
-        applyVelocity();
-    }
+            applyVelocity();
+        }
     }    
 }
