@@ -1,19 +1,19 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-import java.util.ArrayList;
+
 /**
- * Write a description of class Collectable here.
+ * Write a description of class HUD here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Collectable extends Mover
+public class HUD extends Mover
 {
     /**
-     * Act - do whatever the Collectable wants to do. This method is called whenever
+     * Act - do whatever the HUD wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act() 
     {
-        ArrayList<Diamant> myWorld = new ArrayList<Diamant>();
+        // Add your action code here.
     }    
 }

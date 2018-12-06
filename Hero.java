@@ -9,9 +9,17 @@ public class Hero extends Mover {
     
     
     private final double gravity;
-    private int health, maxHealth;
     private final double acc;
     private final double drag;
+    protected static int karakter;
+    public static int wereld = 1;
+    protected static int munten;
+    protected static int muntWaarde;
+    protected static int diamanten;
+    public static int levens;
+    public static boolean hasKey;
+    GreenfootImage[] images = new GreenfootImage[11];
+    int imageNumber;
     private GreenfootImage run1 = new GreenfootImage("p1_walk01.png");
     private GreenfootImage run2 = new GreenfootImage("p1_walk02.png");
     private GreenfootImage run3 = new GreenfootImage("p1_walk03.png");
@@ -78,7 +86,7 @@ for(Actor diamant : getIntersectingObjects(Diamant.class)){
     {
         World myWorld = getWorld();
         getWorld().removeObject(diamant);
-        diamanten++;
+        
         
 }
 }

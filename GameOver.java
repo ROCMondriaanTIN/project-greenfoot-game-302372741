@@ -20,7 +20,7 @@ public class GameOver extends World
         
         if(Greenfoot.isKeyDown("r"))
         {
-            
+            Greenfoot.setWorld(new MyWorld());
         }
     }
 }
