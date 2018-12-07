@@ -70,10 +70,11 @@ public class MyWorld extends World {
         addObject(new Enemy(), 860, 1490);
         addObject(new PinkCoin(false), 1596, 1033);
         addObject(new Diamant(false),876, 673);
-        addObject(new GreenCoin(false), 2763, 855);
-        addObject(new Key(false), 1180, 1153);
-        addObject(new ClosedDoorMid(),3505, 1100);
-        addObject(new ClosedDoorTop(), 3505, 1100);
+        addObject(new Diamant(false),1000, 1000);
+        addObject(new Enemy(), 3227, 1095);
+        //addObject(new Key(false), 1180, 1153);
+        addObject(new ClosedDoorMid(),3501, 1095);
+        addObject(new ClosedDoorTop(), 3501, 1030);
         addObject(new Diamant(false), 2191, 1155);
         addObject(new Diamant(false), 1210, 2233);
         //addObject(new Star(false), 929, 855);

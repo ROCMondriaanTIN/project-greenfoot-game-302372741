@@ -21,38 +21,37 @@ public class LevelSelect extends World
     }
     private void prepare()
     {
-       Level1Titel level1titel = new Level1Titel();
-       Level2Titel level2titel = new Level2Titel();
-       Level3Titel level3titel = new Level3Titel();
-       Level4Titel level4titel = new Level4Titel();
-       Level5Titel level5titel = new Level5Titel();
-       addObject(level1titel, 387, 282);
-       addObject(level2titel, 585, 192);
-       addObject(level3titel, 610, 410);
-       addObject(level4titel, 443, 533);
-       addObject(level5titel, 877, 755);
+       addObject(new Level1Titel(), 387, 282);
+       addObject(new Level2Titel(), 585, 192);
+       addObject(new Level3Titel(), 610, 410);
+       addObject(new Level4Titel(), 443, 533);
+       addObject(new Level5Titel(), 877, 755);
     }
-    public void act()
+    /*public void click()
     {
-        if(Greenfoot.isKeyDown("1"))
+         
+    
+        if(Greenfoot.mouseClicked(this))
         {
             Greenfoot.setWorld(new MyWorld());
         }
-        if(Greenfoot.isKeyDown("2"))
+        if(Greenfoot.mouseClicked(this))
         {
             Greenfoot.setWorld(new LevelSnow());
         }
-        if(Greenfoot.isKeyDown("3"))
-        {
-            Greenfoot.setWorld(new LevelSand());
-        }
-        if(Greenfoot.isKeyDown("4"))
+        if(Greenfoot.mouseClicked(this))
         {
             Greenfoot.setWorld(new LevelForest());
         }
-        if(Greenfoot.isKeyDown("5"))
+        if(Greenfoot.mouseClicked(this))
+        {
+            Greenfoot.setWorld(new LevelSand());
+        }
+        if(Greenfoot.mouseClicked(this))
         {
             Greenfoot.setWorld(new LevelCave());
         }
+    }    */
+        
     }
-}
+
