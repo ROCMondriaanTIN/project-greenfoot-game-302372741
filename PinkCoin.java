@@ -22,7 +22,7 @@ public class PinkCoin extends HUD
     {
         if (isGepakt == false)
         {
-        applyVelocity();
+         applyVelocity();
     }
     }    
 }
