@@ -66,7 +66,7 @@ public class HeroBlue extends Mover {
        
         
         
-        for (Actor ClosedDoorMid : getIntersectingObjects(ClosedDoorMid.class)) {
+        for (Actor ClosedDoorMid : getIntersectingObjects(OpenDoor.class)) {
             if ( ClosedDoorMid != null) {
                 Greenfoot.setWorld(new LevelForest());
                 return;

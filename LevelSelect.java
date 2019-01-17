@@ -6,9 +6,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class LevelSelect extends World
+public final class LevelSelect extends World
 {
-
     /**
      * Constructor for objects of class LevelSelect.
      * 
@@ -17,41 +16,37 @@ public class LevelSelect extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(1000, 800, 1); 
-        prepare();
+        addObject(new Level1Titel(), 330, 282);
+        addObject(new Level2Titel(), 585, 192);
+        addObject(new Level3Titel(), 610, 410);
+        addObject(new Level4Titel(), 300, 533);
+        addObject(new Level5Titel(), 610, 530);
     }
-    private void prepare()
-    {
-       addObject(new Level1Titel(), 387, 282);
-       addObject(new Level2Titel(), 585, 192);
-       addObject(new Level3Titel(), 610, 410);
-       addObject(new Level4Titel(), 443, 533);
-       addObject(new Level5Titel(), 877, 755);
-    }
-    /*public void click()
-    {
-         
     
-        if(Greenfoot.mouseClicked(this))
+    
+    public void clickLevel()
+    {
+        /*if(Greenfoot.mouseClicked(level1)== true)
         {
             Greenfoot.setWorld(new MyWorld());
         }
-        if(Greenfoot.mouseClicked(this))
+        /*if(Greenfoot.mouseClicked(Level2Titel.class))
         {
             Greenfoot.setWorld(new LevelSnow());
         }
-        if(Greenfoot.mouseClicked(this))
+        if(Greenfoot.mouseClicked(Level3Titel.class))
         {
             Greenfoot.setWorld(new LevelForest());
         }
-        if(Greenfoot.mouseClicked(this))
+        if(Greenfoot.mouseClicked(Level4Titel.class))
         {
             Greenfoot.setWorld(new LevelSand());
         }
-        if(Greenfoot.mouseClicked(this))
+        if(Greenfoot.mouseClicked(Level5Titel.class))
         {
             Greenfoot.setWorld(new LevelCave());
-        }
-    }    */
+        }*/
+    }    
         
     }
 

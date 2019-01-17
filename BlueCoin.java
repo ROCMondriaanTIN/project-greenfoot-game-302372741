@@ -16,6 +16,7 @@ public class BlueCoin extends HUD
     public BlueCoin(boolean isGepakt)
     {
         this.isGepakt = isGepakt;
+        setImage("hud_p2Alt.png");
     }  
     public void act() 
     {

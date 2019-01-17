@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class ClosedDoorMid extends HUD
+public class OpenDoor extends HUD
 {
       /**
      * Act - do whatever the ClosedDoorMid wants to do. This method is called whenever
@@ -20,8 +20,7 @@ public class ClosedDoorMid extends HUD
     }   
     public void openDoor()
     {
-        if(getWorld().getObjects(Key.class).size()==1){
-            setImage("door_openMid.png");
+            setImage(new GreenfootImage("door_openMid.png"));
       }
     }
-}
+

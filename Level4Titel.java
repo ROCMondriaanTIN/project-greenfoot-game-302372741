@@ -14,13 +14,14 @@ public class Level4Titel extends Actor
      */
     public void act() 
     {
-        click();
-    }    
-    private void click()
+        clickLevel();
+    }
+    
+    public void clickLevel()
     {
         if(Greenfoot.mouseClicked(this))
         {
-            Greenfoot.setWorld(new LevelForest());
+            Greenfoot.setWorld(new LevelSand());
         }
-}
+    }
 }

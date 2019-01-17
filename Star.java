@@ -9,19 +9,20 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Star extends HUD
 {
      public boolean isGepakt;
-    /**
-     * Act - do whatever the Star wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
+     public static int starTeller;
+   
     public Star(boolean isGepakt)
     {
         this.isGepakt = isGepakt;
+        setImage(new GreenfootImage("star.png"));
     }
     public void act() 
     {
         if (isGepakt == false)
         {
         applyVelocity();
-    }
+        }
+    
     }    
+
 }

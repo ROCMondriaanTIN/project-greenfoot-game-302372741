@@ -6,6 +6,7 @@ import greenfoot.*;
  */
 public class Hero extends Mover {
 
+    public static int starteller;
     private final double gravity;
     private final double acc;
     private final double drag;
@@ -19,28 +20,7 @@ public class Hero extends Mover {
     public boolean mirror = true;
     public int frame;
     public int getal;
-    private GreenfootImage run1 = new GreenfootImage("p1_walk01.png");
-    private GreenfootImage run2 = new GreenfootImage("p1_walk02.png");
-    private GreenfootImage run3 = new GreenfootImage("p1_walk03.png");
-    private GreenfootImage run4 = new GreenfootImage("p1_walk04.png");
-    private GreenfootImage run5 = new GreenfootImage("p1_walk05.png");
-    private GreenfootImage run6 = new GreenfootImage("p1_walk06.png");
-    private GreenfootImage run7 = new GreenfootImage("p1_walk07.png");
-    private GreenfootImage run8 = new GreenfootImage("p1_walk08.png");
-    private GreenfootImage run9 = new GreenfootImage("p1_walk09.png");
-    private GreenfootImage run10 = new GreenfootImage("p1_walk10.png");
-    private GreenfootImage run11 = new GreenfootImage("p1_walk11.png");
-    private GreenfootImage run12 = new GreenfootImage("p1_walk01.png");
-    private GreenfootImage run13 = new GreenfootImage("p1_walk02.png");
-    private GreenfootImage run14 = new GreenfootImage("p1_walk03.png");
-    private GreenfootImage run15 = new GreenfootImage("p1_walk04.png");
-    private GreenfootImage run16 = new GreenfootImage("p1_walk05.png");
-    private GreenfootImage run17 = new GreenfootImage("p1_walk06.png");
-    private GreenfootImage run18 = new GreenfootImage("p1_walk07.png");
-    private GreenfootImage run19 = new GreenfootImage("p1_walk08.png");
-    private GreenfootImage run20 = new GreenfootImage("p1_walk09.png");
-    private GreenfootImage run21 = new GreenfootImage("p1_walk10.png");
-    private GreenfootImage run22 = new GreenfootImage("p1_walk11.png");
+   
   
     
     Scoreboard sb;
@@ -88,13 +68,24 @@ public class Hero extends Mover {
                 
                 return;
             }
-        
+        }  
+        for (Actor waterTile : getIntersectingObjects(WaterTile.class)) {
+            if (waterTile != null) {
+                setLocation(200, 300);
+                Greenfoot.setWorld(new GameOver());
+                getWorld().removeObject(this);
+            }
         }
+        
     
-        for (Actor ClosedDoorMid : getIntersectingObjects(ClosedDoorMid.class)) {
+        for (Actor ClosedDoorMid : getIntersectingObjects(OpenDoor.class)) {
             if ( ClosedDoorMid != null) {
-                Greenfoot.setWorld(new LevelSelect());
-                return;
+                if(starteller == 3){
+                    Greenfoot.setWorld(new LevelSelect());   
+                    return;
+                } else {
+                }
+                
             }
         }
             
@@ -103,6 +94,8 @@ public class Hero extends Mover {
         if(Star != null) { 
             getWorld().removeObject(Star); 
             sb.updateScoreStar();
+            starteller ++;
+  
             
             
         } 
@@ -122,7 +115,6 @@ public class Hero extends Mover {
             
         } 
         Actor BlueCoin= getOneIntersectingObject(BlueCoin.class); 
-
         if(BlueCoin != null) { 
             getWorld().removeObject(BlueCoin); 
             sb.updateScoreBlueCoin();

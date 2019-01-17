@@ -67,7 +67,7 @@ public class HeroRoze extends Mover
         
         
         
-        for (Actor ClosedDoorMid : getIntersectingObjects(ClosedDoorMid.class)) {
+        for (Actor ClosedDoorMid : getIntersectingObjects(OpenDoor.class)) {
             if ( ClosedDoorMid != null) {
                 Greenfoot.setWorld(new LevelSelect());
                 return;

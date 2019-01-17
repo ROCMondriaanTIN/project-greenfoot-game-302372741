@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class ClosedDoorTop extends HUD
+public class OpenDoorTop extends HUD
 {
     /**
      * Act - do whatever the ClosedDoorTop wants to do. This method is called whenever
@@ -19,8 +19,7 @@ public class ClosedDoorTop extends HUD
         openDoor();
     }    
     public void openDoor(){
-        if(getWorld().getObjects(Key.class).size()==1){
             setImage("door_openTop.png");
         }
 }
-}
+

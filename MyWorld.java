@@ -69,18 +69,18 @@ public class MyWorld extends World {
         addObject(new Enemy(), 1200, 1490);
         addObject(new Enemy(), 860, 1490);
         addObject(new PinkCoin(false), 1596, 1033);
-        addObject(new Diamant(false),876, 673);
-        addObject(new Diamant(false),1000, 1000);
+        addObject(new BlueCoin(false), 1800, 1033);
+        addObject(new Star(false),876, 673);
+        addObject(new Star(false),1000, 1000);
         addObject(new Enemy(), 3227, 1095);
         //addObject(new Key(false), 1180, 1153);
-        addObject(new ClosedDoorMid(),3501, 1095);
-        addObject(new ClosedDoorTop(), 3501, 1030);
-        addObject(new Diamant(false), 2191, 1155);
-        addObject(new Diamant(false), 1210, 2233);
+        addObject(new OpenDoor(),3501, 1095);
+        addObject(new OpenDoorTop(), 3501, 1030);
+        addObject(new Star(false), 2191, 1400);
         //addObject(new Star(false), 929, 855);
         //addObject(new Star(false), 1745, 1155);
         //addObject(new Star(false), 2259, 435);
-        addObject(new KeyDisabled(), 1180, 1153);
+       
         setPaintOrder(Hero.class);
         
         //scoreboard = new Scoreboard();
